@@ -13,10 +13,12 @@ function problem2(){
                     if (err){
                         console.log(err);
                     }else{
+                        console.log("directory created");
                         fs.appendFile("./filenames.txt",`${uppercase}`,(err)=>{
                             if (err){
                                 console.log(err);
                             }
+                            console.log("uppercase file created");
                         })
                         const lower = result.toLowerCase();
                         const path = "../folder/"
@@ -26,7 +28,8 @@ function problem2(){
                             if (err) {
                                 console.log(err);
                             }else{
-                                fs.appendFile("./filesnames.txt", `*${lowername}`, (err) =>{
+                                console.log("lowercase file created");
+                                fs.appendFile("./filenames.txt", `*${lowername}`, (err) =>{
                                     if (err){
                                         console.log(err);
                                     }else{
@@ -47,11 +50,11 @@ function problem2(){
                                                                 if (err) {
                                                                     console.log(err);
                                                                 }else{
-                                                                    fs.appendFile("./filesnames.txt", `*${sortPath}`, (err) => {
+                                                                    fs.appendFile("./filenames.txt", `*${sortPath}`, (err) => {
                                                                         if (err) {
                                                                             console.log(err);
                                                                         }else{
-                                                                            fs.readFile("./filesnames.txt", "utf-8", (err, data) => {
+                                                                            fs.readFile("./filenames.txt", "utf-8", (err, data) => {
                                                                                 if (err) {
                                                                                     console.log(err);
                                                                                 }else{

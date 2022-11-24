@@ -1,1 +1,0 @@
-*lowercase.txt*sorted.txt*lowercase.txt*sorted.txt*lowercase.txt*sorted.txt
